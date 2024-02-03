@@ -7,12 +7,28 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <p id="greeting" class="greeting"></p>
+  
   <header class="main-header">
     <img src="https://pkimgcdn.peekyou.com/317f4b806dac6d731d3935da1dff143f.jpeg" alt="Ayla Kulifaj" class="profile-image">
-    <h1>Ayla Kulifaj</h1>
-    <p>Dedicated and academically accomplished individual, eager to transition into software engineering. With a strong foundation in problem-solving, analytical thinking, and team collaboration from diverse educational and work experiences, I am driven to excel in a tech-focused environment and contribute meaningfully to innovative projects.</p>
+    <h1><span id="typewriter"></span></h1>
+    <p>Dedicated and academically accomplished individual, eager to transition into software engineering...</p>
   </header>
-
+  
+  <div class="theme-switch-container">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+    </label>
+  </div>
+  
+  <div class="audio-player-container">
+    <audio id="audioPlayer" controls>
+      <source src="beethoven_audio.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  
   <section class="education">
     <h2>Education</h2>
     <article>
@@ -85,8 +101,9 @@
       <li>Snowboarding: Emphasizing strategic thinking and precision</li>
       <li>Dance and Yoga: Focusing on discipline and mind-body awareness</li>
       <li>Book and Philosophy Clubs: Cultivating critical thinking and discussion skills</li>
-      <li>Volunteering at a Food Shelf: Demonstrating empathy and community involvement</li>
+      <li>Volunteering at a Food Shelf: Committed to engaging in and contributing to a community </li>
     </ul>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
